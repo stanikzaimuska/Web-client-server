@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-from</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="con-reg-styless.css">
+</head>
+<body class="m-3">
+
+<form>
+    <h1 class="header text-center">Conference Registration</h1>
+
+    <label class="form-label" for="registrant's name" >Name</label>
+    <input class="form-control" id="name" name="registrant's name" maxlength="70" required type="text">
+    <br>
+
+    <label class="form-label"  for="Password">Password</label>
+    <input class="form-control" id="Password" required type="text">
+
+    <br>
+    <label class="form-label"  for="email">Email</label>
+    <input class="form-control" id="email" required type="text">
+    <br>
+
+    <label class="form-label"  for="tshirt-size"> T-shirt Size</label>
+    <select class="form-select" required name="tshirt-size" id="tshirt-size">
+        <option value="">Select a Size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+    </select>
+
+    <br>
+    <label class="form-label"  for="DOB">Enter your date of birth</label>
+    <input class="form-control" id="DOB" required type="date">
+    <br>
+
+    <label class="form-label"  for="email-updates">Select if you want to recieve email updates?</label>
+    <input class="form-check-input" required type="radio" name="email-updates" id="email-update-yes">
+    <label class="form-check-label">Yes</label>
+    <input class="form-check-input" required type="radio" name="email-updates" id="email-update-no">
+    <label class="form-check-label" for="">No</label>
+
+    <br>
+    
+
+    <div class="mb-3">
+  <p>Choose sessions:</p>
+
+  <div class="form-check">
+    <input class="form-check-input" id="checkbox-morning"
+           type="checkbox" name="sessions" value="morning">
+    <label class="form-check-label" for="checkbox-morning">
+      Morning conference session
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" id="checkbox-afternoon"
+           type="checkbox" name="sessions" value="afternoon">
+    <label class="form-check-label" for="checkbox-afternoon">
+      Afternoon conference session
+    </label>
+  </div>
+</div>
+
+    <br>
+
+    <div class="mb-3">
+  <label class="form-label" for="special-requests">
+    If you have any special requests, please let us know:
+  </label>
+
+  <textarea class="form-control" rows="7" cols="70"
+            name="special-requests" id="special-requests"></textarea>
+</div>
+    <input class="btn btn-info" id="submit" type="submit">
+</form>
+
+
+</body>
+</html>

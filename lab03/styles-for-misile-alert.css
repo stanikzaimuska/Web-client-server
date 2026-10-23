@@ -1,0 +1,14 @@
+#real-alert{
+    color: rgb(211, 24, 24);
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+}
+#test-only{
+    color: green;
+    background-color: aqua;
+}
+a{
+    display: block;
+    padding: 20px;
+    font-size: 50px;
+}

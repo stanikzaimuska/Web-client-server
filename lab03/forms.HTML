@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <!-- sending data to server  -->
+      <!-- The name attribute gives a form input a name, so the website knows which answer it received. -->
+      <p>Enter Your Name:</p>
+      <input type="text" name="Full-name" />
+      <p>Please check the box if you want to submit this form</p>
+      <input type="checkbox" />
+      <p>Tell us more about yourself</p>
+      <textarea rows="15" cols="50"></textarea>
+
+      <p>What is your Favorite Color?</p>
+      <select>
+        <option>Green</option>
+        <option>Brwon</option>
+        <option>Red</option>
+      </select>
+
+      <p>Are you happy today?</p>
+      <input name="Happy?" type="radio" />Yes
+      <input name="Happy?" type="radio" />No
+
+      <!-- you can add a default number or value or a starting number  -->
+      <p>From 10 to 100 how do you describe your happiness level?</p>
+      <input type="number" value="10" />
+      <!-- you can also pre selct the values by adding the word checked  -->
+      <p>Are you hungry?</p>
+      <input name="Hungry?" type="radio" checked />Yes
+      <input name="Hungry?" type="radio" />No
+
+      <!-- A <label> connects text to a form input. Clicking the label focuses the input,or toggles it
+         for a checkbox,and helps screen readers identify the field. we can label any element -->
+
+      <!-- this label with help the assitive technology but not togle to the text for selecting -->
+      <br />
+      <label>Do you Like Studying here?</label>
+      <input name="like?" type="radio" /><label>yes</label>
+      <input name="like?" type="radio" /><label>No</label>
+      <!-- this label with help with both assistive technology and if you click on test it will select it 
+ because we associated the label with the input through naming them the same with the input ID -->
+
+      <br />
+      <label>Are you a robot?</label>
+      <input name="robot?" id="robot-yes" type="radio" /><label for="robot-yes"
+        >yes</label
+      >
+      <input name="robot?" id="robot-no" type="radio" /><label for="robot-no"
+        >No</label
+      >
+      <br />
+      <p>Add your StarID then submit</p>
+      <input required type="text" name="StarID" />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <!-- Validating and submitting forms = Adding the Required attribute to the input-->
+  </body>
+</html>

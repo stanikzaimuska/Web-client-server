@@ -1,0 +1,64 @@
+body {
+    background-color: #e9dac8;
+    font-family: Verdana, sans-serif;
+    margin: 5px;
+    border: #5c370a7c solid ;
+}
+
+p{
+    color: rgb(44, 25, 25);
+}
+
+h1{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    
+}
+#page-header{
+    background-color: #b37224;
+}
+h2{
+    font-family: Georgia;
+}
+.favorite-section{
+    padding: 10px;
+    border: #c5741150 solid;
+    margin: 20px;
+}
+
+#most-favorite-food{
+    font-weight:lighter;
+    background-color: bisque;
+}
+ul{
+    list-style-type:square;
+    font-size: 25px;
+    font-family:cursive;
+}
+table,th,td,tr{
+    border: #bda60f solid;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    margin-bottom: 40px;
+}
+th{
+    color: darkcyan;
+    background-color: bisque;
+}
+tr:nth-child(even){
+    background-color: rgb(255, 244, 127);
+}
+tr:nth-child(odd){
+    background-color: rgb(255, 183, 0);
+}
+.fav-img{
+    height:auto;
+    width: 700px;
+    border-radius: 15px;
+}
